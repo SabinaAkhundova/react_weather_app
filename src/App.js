@@ -9,8 +9,9 @@ export default function App() {
      <footer> 
      <a href="https://github.com/SabinaAkhundova/react_weather_app"
       target ="_blank">
-            Open-sourced code by Sabina Akhundova
+            Open-sourced code 
           </a>
+          by Sabina Akhundova
           </footer>
     </div>
   );
