@@ -5,6 +5,7 @@ import './App.css';
 export default function App() {
   return (
     <div className="App">
+       <div className="container">
      Weather App
      <footer> 
      <a href="https://github.com/SabinaAkhundova/react_weather_app"
@@ -13,7 +14,8 @@ export default function App() {
           </a>
           by Sabina Akhundova
           </footer>
-    </div>
+          </div>
+          </div>
   );
 }
 
