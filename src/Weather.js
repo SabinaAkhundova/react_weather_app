@@ -33,7 +33,6 @@ export default function Weather (){
           <li className="list-group-item" id="change-wind">Wind MpH</li>
           <li className="list-group-item" id="change-hum">Humidity %</li>
           <li className="list-group-item" id="change-atm">ATM mmHg</li>
-          <p className="btn btn-outline-info" id="btn">Current Location</p>
           <br />
         </form> 
           <div className="row">
