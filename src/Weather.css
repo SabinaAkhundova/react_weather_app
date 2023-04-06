@@ -17,3 +17,99 @@
     --main-color: #084d7c;
     --line-color: #567e99;
   }
+  h1 {
+    color: var(--main-color);
+    padding-right: 20px;
+  }
+  p {
+    margin-top: 10px;
+    padding-right: 59px;
+  }
+  body {
+    background: var(--background);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .list-group-item {
+    color: var(--main-color);
+    background: radial-gradient(#babdbe, #d7e6f0);
+  }
+  .search-form,
+  .search-bar {
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: content-box;
+  }
+  input,
+  select,
+  textarea {
+    text-align: center;
+    color: var(--line-color);
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-transform: capitalize;
+  }
+  
+  input:focus {
+    color: var(--line-color);
+  }
+  
+  .card-title,
+  .forecast-title {
+    color: var(--main-color);
+    text-align: center;
+  }
+  
+  .card-header {
+    border-radius: 15px;
+    border-style: none;
+    color: var(--main-color);
+    font-family: cursive;
+    background: none;
+    text-align: center;
+  }
+  li {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+    cursor: default;
+  }
+  
+  .btn {
+    color: var(--main-color);
+    border-radius: 15px;
+    margin-top: 15px;
+    background: radial-gradient(#babdbe, #d7e6f0);
+    border: transparent;
+    display: block;
+  }
+  .btn:hover {
+    background: none;
+    border-color: var(--line-color);
+  }
+  ::placeholder {
+    border-radius: 15px;
+  }
+  
+  .source-link {
+    color: var(--main-color);
+    text-transform: cursive;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .col-4 {
+    padding: 10px 10px;
+  }
+  .giphy-embed {
+    padding: 30px 50px;
+  }
+  
