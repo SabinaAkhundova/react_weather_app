@@ -3,11 +3,12 @@ import axios from "axios";
 import "./Weather.css"
 
 export default function Weather (){
-    const[ready, setReady]=useState(false);
-    const[weatherData, setWeatherData]=useState({});
+    
+    const[weatherData, setWeatherData]=useState({ready:false});
     function handleResponse(response){
         console.log(response.data);
 setWeatherData({
+    ready:true,
     date:"Thursday 16:50",
     city:response.data.name,
     description:response.data.weather[0].description,
@@ -18,10 +19,10 @@ setWeatherData({
     pressure:response.data.main.pressure
     
 });
-    setReady(true);
+    
     }
 
-    if (ready){ 
+    if (weatherData.ready){ 
         return(
         <div className="Weather">
     <form className="search-bar">
