@@ -7,7 +7,8 @@ export default function App() {
     <div className="App">
        <div className="container">
      Weather App
-     <footer> 
+<Weather/>     
+   <footer> 
      <a href="https://github.com/SabinaAkhundova/react_weather_app"
       target ="_blank">
             Open-sourced code 
