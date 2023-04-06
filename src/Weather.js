@@ -8,37 +8,40 @@ export default function Weather (){
       <input
         type="text"
         placeholder="Enter your city here"
-        autocomplete="off"
-        autofocus="on"
-        id="search-city-input"
+        autocComplete="off"
+        autoFocus="on"
+  
       />
       <input type="submit" value="search" />
     </form>
 
     <form id="body-form">
-    
-        <div className="card-header">
+            <div className="card-header">
           <p className="current-date"></p>
         </div>
         
-          <h4 className="card-title" id="city">City</h4>
-          <img id="icon" />
-          <li className="list-group-item" id="description">Now it is</li>
-          <li className="list-group-item" id="change-temp">
-            <a href="#">Temperature°С</a>
+          <h4 className="card-title" >City</h4>
+          <img src="https://openweathermap.org/img/wn/04d@2x.png"
+          alt="Mostly Cloudy"
+          />
+          <li className="list-group-item" >Now it is</li>
+          <li className="list-group-item">
+            <a href="#">Temperature
+            <span className="unit">°С</span>
+            </a>
           </li>
-          <li className="list-group-item" id="fahrenheit-temp">
+          <li className="list-group-item">
             <a href="#">Fahrenheit</a>
           </li>
-          <li className="list-group-item" id="change-wind">Wind MpH</li>
-          <li className="list-group-item" id="change-hum">Humidity %</li>
-          <li className="list-group-item" id="change-atm">ATM mmHg</li>
+          <li className="list-group-item">Wind MpH</li>
+          <li className="list-group-item" >Humidity %</li>
+          <li className="list-group-item" >ATM mmHg</li>
           <br />
         </form> 
           <div className="row">
           <h5 className="forecast-title">
             Forecast</h5>
-            <div className="content-text" id="forecast">
+            <div className="forecast-text">
               </div>
              </div>
             
