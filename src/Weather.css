@@ -1,4 +1,4 @@
-.App {
+.Weather {
     background: var(--background);
     top: 40%;
     box-shadow: 0 0 10px 0;
@@ -109,7 +109,5 @@
   .col-4 {
     padding: 10px 10px;
   }
-  .giphy-embed {
-    padding: 30px 50px;
-  }
+  
   
