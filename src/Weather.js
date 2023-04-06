@@ -9,6 +9,7 @@ export default function Weather (){
         console.log(response.data);
 setWeatherData({
     description:response.data.weather[0].description,
+    iconUrl:"https://openweathermap.org/img/wn/04d@2x.png",
     city:response.data.name,
     temperature:response.data.main.temp,
     humidity:response.data.main.humidity,
@@ -39,8 +40,8 @@ setWeatherData({
         </div>
         
           <h4 className="card-title" >{weatherData.city}</h4>
-          <img src="https://openweathermap.org/img/wn/04d@2x.png"
-          alt="Mostly Cloudy"
+          <img src={weatherData.iconUrl}
+          alt={weatherData.description}
           />
           <li className="list-group-item" >Now it is {weatherData.description}</li>
           <li className="list-group-item">
