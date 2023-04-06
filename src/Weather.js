@@ -8,9 +8,10 @@ export default function Weather (){
     function handleResponse(response){
         console.log(response.data);
 setWeatherData({
+    date:"Thursday 16:50",
+    city:response.data.name,
     description:response.data.weather[0].description,
     iconUrl:"https://openweathermap.org/img/wn/04d@2x.png",
-    city:response.data.name,
     temperature:response.data.main.temp,
     humidity:response.data.main.humidity,
     wind:response.data.wind.speed,
@@ -34,16 +35,16 @@ setWeatherData({
       <input type="submit" value="search" />
     </form>
 
-    <form id="body-form">
-            <div className="card-header">
-          <p className="current-date"></p>
-        </div>
-        
+    <form className="body-form">
+        <div className="card-header">
+          <p className="current-date">{weatherData.date}</p>    
           <h4 className="card-title" >{weatherData.city}</h4>
           <img src={weatherData.iconUrl}
           alt={weatherData.description}
           />
-          <li className="list-group-item" >Now it is {weatherData.description}</li>
+          </div>
+          <div className="card-info">
+                <li className="list-group-item" >Now it is {weatherData.description}</li>
           <li className="list-group-item">
             <a href="#">{Math.round(weatherData.temperature)}
             <span className="unit">°С</span>
@@ -56,6 +57,7 @@ setWeatherData({
           <li className="list-group-item" >{weatherData.humidity} %</li>
           <li className="list-group-item" >{weatherData.pressure} mmHg</li>
           <br />
+          </div>  
         </form> 
           <div className="row">
           <h5 className="forecast-title">

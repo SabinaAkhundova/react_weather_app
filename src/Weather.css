@@ -21,10 +21,7 @@
     color: var(--main-color);
     padding-right: 20px;
   }
-  p {
-    margin-top: 10px;
-    padding-right: 59px;
-  }
+ 
   body {
     background: var(--background);
     max-width: 600px;
@@ -39,8 +36,8 @@
   .search-form,
   .search-bar {
     text-align: center;
-    padding: 20px 50px;
-    box-sizing: content-box;
+    padding: 10px 10px;
+    margin-left: 20px;
   }
   input,
   select,
@@ -56,13 +53,11 @@
     color: var(--line-color);
   }
   
+   
+  
+  .card-header,
   .card-title,
   .forecast-title {
-    color: var(--main-color);
-    text-align: center;
-  }
-  
-  .card-header {
     border-radius: 15px;
     border-style: none;
     color: var(--main-color);
