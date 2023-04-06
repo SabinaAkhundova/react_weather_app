@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from "axios";
 import "./Weather.css"
 
 export default function Weather (){
-    return(
+    const[ready, setReady]=useState(false);
+    const[temperature, setTemperature]=useState(null);
+    function handleResponse(response){
+        console.log(response.data);
+        setTemperature(response.data.main.temp);
+    }
+
+    if (ready){ return(
         <div className="Weather">
     <form className="search-bar">
       <input
@@ -26,7 +34,7 @@ export default function Weather (){
           />
           <li className="list-group-item" >Now it is</li>
           <li className="list-group-item">
-            <a href="#">Temperature
+            <a href="#">Temperature {temperature}
             <span className="unit">°С</span>
             </a>
           </li>
@@ -47,4 +55,15 @@ export default function Weather (){
             
   </div>
     );
+    }
+    else{
+        const apiKey="2c6da8dad3cff7b7ea9b815b83b08d69";
+        let city="Odesa";
+        let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API key}&units=metric`;
+        axios.get(apiUrl).then(handleResponse);
+        return "Loading..."
+    }
+   
+   
+
 }
