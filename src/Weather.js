@@ -17,11 +17,11 @@ export default function Weather (){
 
     <form id="body-form">
     
-        <div class="card-header" style="width: 300px;">
-          <p class="current-date"></p>
+        <div className="card-header">
+          <p className="current-date"></p>
         </div>
         
-          <h4 class="card-title" id="city">City</h4>
+          <h4 className="card-title" id="city">City</h4>
           <img id="icon" />
           <li className="list-group-item" id="description">Now it is</li>
           <li className="list-group-item" id="change-temp">
@@ -43,13 +43,6 @@ export default function Weather (){
               </div>
              </div>
             
-              <iframe src="https://giphy.com/embed/l41YePgsv92CTdTVe" width="100%" height="80%" frameBorder="0" class="giphy-embed"></iframe>
-            <p>
-              <a href="https://giphy.com/gifs/weatherunderground-weather-underground-wunderground-l41YePgsv92CTdTVe">
-              </a>
-              </p>
- 
-    
   </div>
     );
 }
