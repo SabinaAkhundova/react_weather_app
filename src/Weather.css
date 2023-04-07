@@ -77,7 +77,9 @@
     color: var(--main-color);
     cursor:pointer;
   }
-  
+  .tempLink{
+    font-weight: bold;
+  }
   .btn {
     color: var(--main-color);
     border-radius: 15px;

@@ -18,7 +18,7 @@ function convertToCelsius(event){
  return (
     <li className="list-group-item">
     <span className="temperature">{Math.round(props.celsius)}</span>
-    <span className="unit">°С | <a href="/" onClick={convertToFahrenheit}>°F</a>
+    <span className="unit">°С | <a className="tempLink" href="/" onClick={convertToFahrenheit}>°F</a>
     </span> 
       </li>
             );
@@ -27,7 +27,7 @@ function convertToCelsius(event){
         return(
             <li className="list-group-item">
             <span className="temperature">{Math.round(fahrenheit)}</span>
-            <span className="unit"> <a href="/" onClick={convertToCelsius}>°С </a>| °F
+            <span className="unit"> <a  className="tempLink" href="/" onClick={convertToCelsius}>°С </a>| °F
             </span> 
               </li>
                     );

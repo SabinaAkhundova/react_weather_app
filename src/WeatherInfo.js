@@ -20,7 +20,7 @@
       <div className="card-info">
             <li className="list-group-item" >Now it is {props.data.description}</li>
             <WeatherTemperature celsius={props.data.temperature}/>
-            <li className="list-group-item">{props.data.wind} MpH</li>
+            <li className="list-group-item">{props.data.wind} KmpH</li>
       <li className="list-group-item" >{props.data.humidity} %</li>
       <li className="list-group-item" >{props.data.pressure} mmHg</li>
       <br />

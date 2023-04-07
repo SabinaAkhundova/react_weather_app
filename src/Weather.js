@@ -17,7 +17,7 @@ setWeatherData({
     icon:response.data.weather[0].icon,
     temperature:response.data.main.temp,
     humidity:response.data.main.humidity,
-    wind:response.data.wind.speed,
+    wind:Math.round (response.data.wind.speed),
     pressure:response.data.main.pressure
     
 });
