@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FormattedDate from './FormattedDate';
+import WeatherInfo from './WeatherInfo';
 import axios from "axios";
 import "./Weather.css"
 
@@ -36,6 +37,7 @@ setWeatherData({
       />
       <input type="submit" value="search" />
     </form>
+    <WeatherInfo/>
 
     <form className="body-form">
         <div className="card-header">
