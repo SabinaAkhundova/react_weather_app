@@ -13,7 +13,7 @@ export default function App() {
       target ="_blank"
       rel="noreferrer">
             Open-sourced code 
-          </a>
+          </a> {""}
           by Sabina Akhundova
           </footer>
           </div>

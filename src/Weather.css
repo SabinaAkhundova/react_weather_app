@@ -13,7 +13,7 @@
     text-transform: capitalize;
   }
   :root {
-    --background: linear-gradient(rgb(187, 155, 164) 0%, rgb(236, 247, 246) 100%);
+    --background: linear-gradient(rgb(239, 216, 222) 0%, rgb(236, 247, 246) 100%);
     --main-color: #115583;
     --line-color: #567e99;
   }
@@ -75,7 +75,7 @@
   a {
     text-decoration: none;
     color: var(--main-color);
-    cursor: default;
+    cursor:pointer;
   }
   
   .btn {

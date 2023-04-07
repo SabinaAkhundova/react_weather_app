@@ -1,6 +1,8 @@
     import React  from "react";
     import FormattedDate from './FormattedDate';
     import WeatherIcon from "./WeatherIcon";
+    import WeatherTemperature from "./WeatherTemperature";
+
 
     export default function WeatherInfo(props) 
         {
@@ -17,15 +19,8 @@
       </div>
       <div className="card-info">
             <li className="list-group-item" >Now it is {props.data.description}</li>
-      <li className="list-group-item">
-        <a href="#">{Math.round(props.data.temperature)}
-        <span className="unit">°С</span>
-        </a>
-      </li>
-      <li className="list-group-item">
-        <a href="#">Fahrenheit</a>
-      </li>
-      <li className="list-group-item">{props.data.wind} MpH</li>
+            <WeatherTemperature celsius={props.data.temperature}/>
+            <li className="list-group-item">{props.data.wind} MpH</li>
       <li className="list-group-item" >{props.data.humidity} %</li>
       <li className="list-group-item" >{props.data.pressure} mmHg</li>
       <br />
