@@ -13,8 +13,8 @@
     text-transform: capitalize;
   }
   :root {
-    --background: linear-gradient(rgb(250, 235, 240) 0%, rgb(236, 247, 246) 100%);
-    --main-color: #084d7c;
+    --background: linear-gradient(rgb(187, 155, 164) 0%, rgb(236, 247, 246) 100%);
+    --main-color: #115583;
     --line-color: #567e99;
   }
   h1 {
