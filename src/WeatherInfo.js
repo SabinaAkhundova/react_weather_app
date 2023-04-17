@@ -14,7 +14,7 @@
         <FormattedDate date={props.data.date}/>
         </p>    
       <h4 className="card-title" >{props.data.city}</h4>
-      <WeatherIcon code={props.data.icon} />
+      <WeatherIcon code={props.data.icon} size={82} />
       
       </div>
       <div className="card-info">
