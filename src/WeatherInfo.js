@@ -26,12 +26,6 @@
       <br />
       </div>  
     </form> 
-      <div className="row">
-      <h5 className="forecast-title">
-        Forecast</h5>
-        <div className="forecast-text">
-          </div>
-         </div>
-         </dv>
+      </dv>
         );
     }
