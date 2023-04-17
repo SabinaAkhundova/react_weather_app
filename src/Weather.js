@@ -12,6 +12,7 @@ const[city, setCity]=useState (props.defaultCity);
         console.log(response.data);
 setWeatherData({
     ready:true,
+    coordinates:response.data.coord,
     date:new Date (response.data.dt*1000),
     city:response.data.name,
     description:response.data.weather[0].description,
@@ -58,7 +59,7 @@ setCity(event.target.value);
       <input type="submit" value="search" />
     </form>
     <WeatherInfo data={weatherData}/>
-    <WeatherForecast/>
+    <WeatherForecast coordinates={weatherData.coordinates}/>
 
             
   </div>
