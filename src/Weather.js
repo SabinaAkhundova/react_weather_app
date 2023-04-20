@@ -56,7 +56,7 @@ setCity(event.target.value);
         onChange={handleCityChange}
   
       />
-      <input type="submit" value="search" />
+      <input type="submit" value="search" className='btn btn-light' />
     </form>
     <WeatherInfo data={weatherData}/>
     <WeatherForecast coordinates={weatherData.coordinates}/>
