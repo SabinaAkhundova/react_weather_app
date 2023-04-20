@@ -8,7 +8,7 @@ export default function App() {
        <div className="container">
     
 <Weather defaultCity="Odesa"/>     
-   <footer> 
+   <footer className='footer-text'> 
      <a href="https://github.com/SabinaAkhundova/react_weather_app"
       target ="_blank"
       rel="noreferrer">

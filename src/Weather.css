@@ -3,7 +3,7 @@
     top: 40%;
     box-shadow: 0 0 10px 0;
    text-align: center;
-    margin:80px 10px;
+    margin:20px 10px;
     padding: 20px 5px;
     border-radius: 20px;
     border: none;
@@ -13,16 +13,14 @@
   }
   .WeatherForecast{
     text-align: center;
+    color: var(--main-color);
   }
   :root {
     --background: linear-gradient(rgb(239, 216, 222) 0%, rgb(236, 247, 246) 100%);
     --main-color: #115583;
     --line-color: #567e99;
   }
-  h1 {
-    color: var(--main-color);
-    padding-right: 20px;
-  }
+
   
   body {
     background: var(--background);
@@ -43,7 +41,7 @@
   }
   .list-group-item {
     color: var(--main-color);
-    background: linear-gradient(rgb(239, 216, 222) 0%, rgb(236, 247, 246) 100%);
+    background: linear-gradient(#f0d9df 0%, #ecf7f6 100%);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -62,12 +60,13 @@
     text-align: center;
     color: var(--line-color);
     border-radius: 10px;
-    border-color: aliceblue;
-    text-transform: capitalize;
-  }
-  
-  input:focus {
-    color: var(--line-color);
+   text-transform: capitalize;
+   border: #ecf7f6;
+   background-color:#f8f9fa;
+    }
+ 
+  input:focus{
+outline-color: #f0d9df;
   }
   
    .btn{
@@ -88,6 +87,7 @@ background-color: var(--line-color);
     text-decoration: none;
     color: var(--main-color);
     cursor:pointer;
+  font-size: x-small;
   }
   .tempLink{
     font-weight: bold;
@@ -104,6 +104,7 @@ background-color: var(--line-color);
     font-size: 15px;
     text-align: center;
   }
-  
-  
+  .footer-text{
+    font-size: x-small;
+  }
   
