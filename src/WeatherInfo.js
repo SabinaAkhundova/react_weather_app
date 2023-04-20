@@ -7,8 +7,8 @@
     export default function WeatherInfo(props) 
         {
         return(
-            <dv className="WeatherInfo">
-    <form className="body-form">
+            <div className="WeatherInfo">
+    <form className="body-form row row-cols-2">
     <div className="card-header">
       <p className="current-date">
         <FormattedDate date={props.data.date}/>
@@ -17,7 +17,7 @@
       <WeatherIcon code={props.data.icon} size={82} />
       
       </div>
-      <div className="card-info">
+      <div className="card-info" >
             <li className="list-group-item" >Now it is {props.data.description}</li>
             <WeatherTemperature celsius={props.data.temperature}/>
             <li className="list-group-item">{props.data.wind} KmpH</li>
@@ -26,6 +26,6 @@
       <br />
       </div>  
     </form> 
-      </dv>
+      </div>
         );
     }

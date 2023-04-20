@@ -2,15 +2,15 @@
     background: var(--background);
     top: 40%;
     box-shadow: 0 0 10px 0;
-    background: inherit;
     backdrop-filter: blur(10px);
     text-align: center;
-    margin: 20px auto;
+    margin:100px 10px;
     padding: 20px 5px;
     border-radius: 15px;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
+    
   }
   :root {
     --background: linear-gradient(rgb(239, 216, 222) 0%, rgb(236, 247, 246) 100%);
@@ -21,12 +21,13 @@
     color: var(--main-color);
     padding-right: 20px;
   }
- 
+  
   body {
     background: var(--background);
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
+   
   }
   
   .list-group-item {
