@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon";
+
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props){
   let [loaded, setLoaded]=useState(false);
@@ -17,35 +18,8 @@ if(loaded){
   <h5 className="forecast-title">
     Forecast</h5>
     <div className="col">
-      <div className="WetherForecast-temperature">{forecast[0].temp.day}°С</div>  
-      <div className="WeatherForecast-day">{forecast[0].dt}</div>
-    <WeatherIcon code ={forecast[0].wetaher[0].icon} size={36}/>
-    </div>
-    <div className="col">
-    <div className="WetherForecast-temperature">25°С</div>
-    <div className="WeatherForecast-day">Tue</div>
-    <WeatherIcon code ="01d" size={36}/>
-    </div>
-    <div className="col">
-    <div className="WetherForecast-temperature">25°С</div>
-    <div className="WeatherForecast-day">Wed</div>
-    <WeatherIcon code ="01d" size={36}/>
-    </div>
-    <div className="col">
-    <div className="WetherForecast-temperature">25°С</div>
-    <div className="WeatherForecast-day">Thu</div>
-    <WeatherIcon code ="01d" size={36}/>
-    </div>
-    <div className="col">
-    <div className="WetherForecast-temperature">25°С</div>
-    <div className="WeatherForecast-day">Fri</div>
-    <WeatherIcon code ="01d" size={36}/>
-    </div>
-    <div className="col">
-    <div className="WetherForecast-temperature">25°С</div>
-    <div className="WeatherForecast-day">Sat</div>
-    <WeatherIcon code ="01d" size={36}/>
-    </div>
+      <WeatherForecastDay data={forecast[0]}/>
+      </div>
     </div>
     </div>
     
