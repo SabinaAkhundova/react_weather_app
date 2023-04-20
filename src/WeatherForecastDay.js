@@ -27,7 +27,7 @@ function day(){
   <div>
     <div className="row row-cols-12">
     <div className="col">
-      
+ 
     <div className="WeatherForecast-day">{day()}</div>
         <div className="WetherForecast-temperature">{dayTemperature()}°С</div>   
         <WeatherIcon code={props.data.weather[0].icon} size={36} /> 

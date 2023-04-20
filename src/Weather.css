@@ -2,11 +2,10 @@
     background: var(--background);
     top: 40%;
     box-shadow: 0 0 10px 0;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    margin:100px 10px;
+   text-align: center;
+    margin:80px 10px;
     padding: 20px 5px;
-    border-radius: 15px;
+    border-radius: 20px;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
@@ -24,16 +23,29 @@
   
   body {
     background: var(--background);
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
    
   }
   
+  .card-header,
+  .card-title,
+  .forecast-title {
+    color: var(--main-color);
+    font-family: cursive;
+    text-align: center;
+    padding: 10px;
+    
+  }
   .list-group-item {
     color: var(--main-color);
-    background: radial-gradient(#babdbe, #d7e6f0);
+    background: linear-gradient(rgb(239, 216, 222) 0%, rgb(236, 247, 246) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
   }
+  
   .search-form,
   .search-bar {
     text-align: center;
@@ -55,23 +67,8 @@
   }
   
    
-  
-  .card-header,
-  .card-title,
-  .forecast-title {
-    border-radius: 15px;
-    border-style: none;
-    color: var(--main-color);
-    font-family: cursive;
-    background: none;
-    text-align: center;
-  }
-  li {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 12px;
-  }
+ 
+
   
   a {
     text-decoration: none;
@@ -81,18 +78,7 @@
   .tempLink{
     font-weight: bold;
   }
-  .btn {
-    color: var(--main-color);
-    border-radius: 15px;
-    margin-top: 15px;
-    background: radial-gradient(#babdbe, #d7e6f0);
-    border: transparent;
-    display: block;
-  }
-  .btn:hover {
-    background: none;
-    border-color: var(--line-color);
-  }
+ 
   ::placeholder {
     border-radius: 15px;
   }
@@ -104,8 +90,5 @@
     text-align: center;
   }
   
-  .col-4 {
-    padding: 10px 10px;
-  }
   
   
